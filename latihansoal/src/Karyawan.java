@@ -1,0 +1,47 @@
+public class Karyawan {
+    private String idKaryawan;
+    private String nama;
+    private double gajiPokok;
+    protected String departemen;
+
+    public Karyawan(String nama, String idKaryawan){
+        this.nama = nama;
+        this.idKaryawan = idKaryawan;
+    }
+
+    public String getNama(){
+        return nama;
+    }
+
+    public void setNama(String nama){
+        this.nama = nama;
+    }
+
+    public String getIdKaryawan(){
+        return idKaryawan;
+    }
+
+    public void setIdKaryawan(String idKaryawan){
+        this.idKaryawan = idKaryawan;
+    }
+
+    public double getGajiPokok(){
+        return gajiPokok;
+    }
+
+    public void setGajiPokok(double gajiPokok){
+        if (gajiPokok < 0) {
+            System.out.println("Gaji tidak boleh negatif!");
+        } else {
+            this.gajiPokok = gajiPokok;
+        }
+    }
+
+    public String getDepartemen(){
+        return departemen;
+    }
+
+    public void setDepartemen(String departemen){
+        this.departemen = departemen;
+    }
+}

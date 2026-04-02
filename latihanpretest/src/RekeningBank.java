@@ -12,11 +12,11 @@ public class RekeningBank {
     }
 
     public void setSaldo(int saldobaru){
-        if (saldobaru < 0) {
-            System.out.println("salah");
-        } else {
-            this.saldo = saldobaru;
-            System.out.println("berhasil di update.");
-        }
+            if (saldobaru < 0) {
+                System.out.println("salah");
+            } else {
+                this.saldo = saldobaru;
+                System.out.println("berhasil di update.");
+            }
     }
 }
