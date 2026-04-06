@@ -16,5 +16,6 @@ public class Main {
         System.out.println("Kategori : " + barang.kategori);
         System.out.println("Stok     : " + barang.getstok());
         System.out.println("Harga    : " + barang.gethargaSatuan());
+        
     }
 }
